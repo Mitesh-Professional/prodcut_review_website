@@ -1,0 +1,152 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Product Review Page - ReviewSite</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <script src="js/script.js" defer></script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-gray-800 shadow-lg">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a class="text-3xl font-bold text-white" href="#">
+                <i class="fas fa-star text-blue-500"></i> ReviewSite
+            </a>
+            <div class="hidden md:flex space-x-6">
+                <a class="text-gray-300 hover:text-blue-500 transition duration-300" href="#">Home</a>
+                <a class="text-gray-300 hover:text-blue-500 transition duration-300" href="#">Products Review</a>
+                <a class="text-gray-300 hover:text-blue-500 transition duration-300" href="#">Blog</a>
+                <a class="text-gray-300 hover:text-blue-500 transition duration-300" href="#">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button class="text-gray-300 focus:outline-none" id="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- Mobile Menu -->
+    <div class="hidden md:hidden bg-gray-800 shadow-lg" id="mobile-menu">
+        <a class="block px-4 py-2 text-gray-300 hover:bg-gray-700 transition duration-300" href="#">Home</a>
+        <a class="block px-4 py-2 text-gray-300 hover:bg-gray-700 transition duration-300" href="#">Products & Reviews</a>
+        <a class="block px-4 py-2 text-gray-300 hover:bg-gray-700 transition duration-300" href="#">Blog</a>
+        <a class="block px-4 py-2 text-gray-300 hover:bg-gray-700 transition duration-300" href="#">Contact</a>
+    </div>
+    <!-- Product Review Section -->
+    <section class="py-12 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                <div class="flex flex-col md:flex-row">
+                    <img alt="Image of a modern smartphone with a sleek design" class="w-full md:w-1/3 h-64 object-cover rounded-lg" src="https://storage.googleapis.com/a1aa/image/bOBVHCidLqraCRnIeuRMFOFCejnRqpdnDHpLBBBOVCJQkRIUA.jpg" />
+                    <div class="md:ml-6 mt-4 md:mt-0">
+                        <h2 class="text-3xl font-bold text-gray-100">Smartphone</h2>
+                        <p class="text-gray-400 mt-2">Brand: TechBrand</p>
+                        <p class="text-gray-400 mt-2">Price: $499</p>
+                        <p class="text-gray-400 mt-2">Other Info: 128GB Storage, 6GB RAM, 48MP Camera</p>
+                    </div>
+                </div>
+                <div class="mt-8">
+                    <h3 class="text-2xl font-bold text-gray-100">Product Review</h3>
+                    <p class="text-gray-400 mt-2">
+                        <strong>Summary:</strong> This smartphone offers a sleek design and the latest features, making it a top choice for tech enthusiasts. The high-resolution display and powerful processor ensure smooth performance, while the advanced camera system captures stunning photos and videos. With long battery life and fast charging capabilities, this smartphone is perfect for those who are always on the go.
+                    </p>
+                    <p class="text-gray-400 mt-2">
+                        <strong>Good Things:</strong> The build quality is exceptional, and the user interface is intuitive and easy to navigate. The camera system is one of the best we've tested, producing sharp and vibrant images. The battery life is impressive, and the fast charging feature is a great addition.
+                    </p>
+                    <p class="text-gray-400 mt-2">
+                        <strong>Bad Things:</strong> The phone can be a bit slippery without a case, and the fingerprint sensor is sometimes slow to respond.
+                    </p>
+                    <p class="text-gray-400 mt-2">
+                        <strong>Other Features:</strong> The phone comes with a variety of pre-installed apps that are useful for everyday tasks. The display is bright and clear, making it easy to use even in direct sunlight. The phone also supports 5G connectivity, ensuring fast internet speeds.
+                    </p>
+                </div>
+                <div class="mt-8">
+                    <h3 class="text-2xl font-bold text-gray-100">Our Side Review</h3>
+                    <div class="flex items-center text-yellow-400 mt-2">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="text-gray-400 mt-2">
+                        <strong>What We Feel:</strong> Our team found this smartphone to be an excellent choice for anyone looking for a high-performance device. The build quality is exceptional, and the user interface is intuitive and easy to navigate. The camera system is one of the best we've tested, producing sharp and vibrant images. The battery life is impressive, and the fast charging feature is a great addition.
+                    </p>
+                    <p class="text-gray-400 mt-2">
+                        <strong>Good Things:</strong> The build quality is top-notch, and the phone feels premium in hand. The display is bright and clear, making it easy to use even in direct sunlight. The performance is smooth and lag-free, thanks to the powerful processor and ample RAM.
+                    </p>
+                    <p class="text-gray-400 mt-2">
+                        <strong>Bad Things:</strong> The phone can be a bit slippery without a case, and the fingerprint sensor is sometimes slow to respond. Additionally, the phone's software can be a bit bloated with pre-installed apps that may not be useful to everyone.
+                    </p>
+                    <p class="text-gray-400 mt-2">
+                        <strong>Build Quality:</strong> The build quality of this smartphone is exceptional. The materials used are premium, and the phone feels solid and durable. The design is sleek and modern, making it a pleasure to hold and use.
+                    </p>
+                    <p class="text-gray-400 mt-2">
+                        <strong>Other Features:</strong> The phone comes with a variety of pre-installed apps that are useful for everyday tasks. The display is bright and clear, making it easy to use even in direct sunlight. The phone also supports 5G connectivity, ensuring fast internet speeds.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-4">ReviewSite</h3>
+                    <p class="text-gray-400">Your go-to place for honest and detailed product reviews.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a class="text-gray-400 hover:text-white transition duration-300" href="#">Home</a></li>
+                        <li><a class="text-gray-400 hover:text-white transition duration-300" href="#">Products & Reviews</a></li>
+                        <li><a class="text-gray-400 hover:text-white transition duration-300" href="#">Blog</a></li>
+                        <li><a class="text-gray-400 hover:text-white transition duration-300" href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a class="text-gray-400 hover:text-white transition duration-300" href="#">Privacy Policy</a></li>
+                        <li><a class="text-gray-400 hover:text-white transition duration-300" href="#">Terms of Service</a></li>
+                        <li><a class="text-gray-400 hover:text-white transition duration-300" href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a class="text-gray-400 hover:text-white transition duration-300" href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="text-gray-400 hover:text-white transition duration-300" href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="text-gray-400 hover:text-white transition duration-300" href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-gray-500">
+                &copy; 2023 ReviewSite. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
